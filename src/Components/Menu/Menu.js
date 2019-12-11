@@ -1,12 +1,27 @@
 import React from "react";
 import './menu.scss';
 
+const links = [
+    {
+        name: 'About us',
+        path: '/about-us',
+    },
+    {
+        name: 'Our Services',
+        path: '/services',
+    },
+    {
+        name: 'Portfolio',
+        path: '/portfolio',
+    },
+];
+
 const Menu = () => {
     return (
         <ul className="nav-menu nav-menu_header">
-            <li className="nav-menu_item"><a href="/about-us">About us</a></li>
-            <li className="nav-menu_item"><a href="/services">Our Services</a></li>
-            <li className="nav-menu_item"><a href="/portfolio">Portfolio</a></li>
+            {links.map(link => (
+                <li className='nav-menu_item'><a href={link.path}>{link.name}</a></li>
+            ))}
         </ul>
     );
 }
