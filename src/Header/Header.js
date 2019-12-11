@@ -8,7 +8,7 @@ class Header extends Component {
         return(
             <header className="header">
                 <div className="header_wrapper">
-                    <a className="logo-block logo_block_header" href="#home"><img src={logo} alt="logo" className="logo"/></a>
+                    <a className="logo-block logo_block_header" href="/"><img src={logo} alt="logo" className="logo"/></a>
 
                     <Menu/>
                 </div>

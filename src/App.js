@@ -1,24 +1,25 @@
 import React from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./Header/Header";
-import Banner from "./Components/Banner/Banner";
-import AboutUs from "./Components/AboutUs/AboutUs";
+import Home from "./Pages/Home/Home";
+import Services from "./Pages/Services/Services";
+import AboutUsPage from "./Pages/About-us/Home";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 import Footer from "./Footer/Footer";
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-
-      <section>
-        <div className="main-content">
-          <Banner/>
-          <AboutUs/>
-        </div>
-      </section>
-
-      <Footer/>
-    </div>
+      <BrowserRouter>
+          <div className="App">
+              <Header/>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/about-us" component={AboutUsPage}/>
+              <Route exact path="/services" component={Services}/>
+              <Route exact path="/portfolio" component={Portfolio}/>
+              <Footer/>
+          </div>
+      </BrowserRouter>
   );
 }
 
