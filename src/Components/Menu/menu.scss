@@ -1,0 +1,31 @@
+.nav-menu {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  .nav-menu_item {
+    line-height: 22px;
+    font-size: 18px;
+    color: #1e1f24;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .nav-menu_item {
+      margin-left: 74px;
+    }
+
+    .nav-menu_item:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

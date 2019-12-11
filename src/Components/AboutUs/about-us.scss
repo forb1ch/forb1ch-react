@@ -1,0 +1,100 @@
+.about-us {
+  padding: 100px 15px 30px 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  > .title {
+    font-size: 18px;
+    line-height: 22px;
+    min-width: 200px;
+    padding: 8px 0;
+    background: #fcc127;
+    color: #1e1f24;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .2px;
+    text-align: center;
+  }
+
+  > .about-us_title {
+    margin-bottom: 50px;
+  }
+
+  &_text {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 70px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &_item {
+      padding-top: 120px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    &_item:first-of-type {
+      background: url('../../images/icons/aim.svg') no-repeat top left 55%;
+    }
+
+    &_item:nth-of-type(2) {
+      background: url('../../images/icons/bag.svg') no-repeat top center;
+    }
+
+    &_item:nth-of-type(3) {
+      background: url('../../images/icons/chair.svg') no-repeat top center;
+    }
+
+    &_item:last-of-type {
+      background: url('../../images/icons/buildings.svg') no-repeat top center;
+    }
+
+    &_item .text {
+      line-height: 22px;
+      font-family:'Montserrat', sans-serif;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+
+    &_item .text_big {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &_item .text_small {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    padding-top: 500px;
+
+    &_text {
+      font-size: 48px;
+      line-height: 59px;
+      margin-bottom: 120px;
+    }
+
+    &-info_item {
+      width: 22%;
+    }
+  }
+}

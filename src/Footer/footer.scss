@@ -1,0 +1,127 @@
+.footer {
+  padding: 180px 0 0;
+  background: #1e1f24;
+
+  &-wrapper-top,
+  &-wrapper-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &-wrapper-top {
+    padding-bottom: 56px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .co-block_footer {
+      margin-bottom: 68px;
+    }
+
+    .co-block_text {
+      font-size: 45px;
+      color: #fcc127;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      position: relative;
+
+      &:before {
+        height: 82px;
+        width: 122px;
+        background: url('../images/icons/any-orange-logo.svg') no-repeat center;
+        content: '';
+        display: block;
+        left: 50%;
+        position: absolute;
+        right: 50%;
+        top: -120px;
+        transform: translate(-50% , 0%);
+        visibility: visible;
+      }
+    }
+
+    .social {
+      padding-top: 41px;
+      align-items: flex-end;
+      border-top: 1px solid #37383D;
+      display: flex;
+      justify-content: center;
+      width: 97%;
+
+      [href*='.org'],
+      [href*='.com'] {
+        margin-right: 39px;
+        cursor: pointer;
+        display: block;
+        font-size: 0;
+      }
+
+      [href*='.org']:last-of-type,
+      [href*='.com']:last-of-type {
+        margin-right: 0;
+      }
+
+      [href*='drupal.org'] {
+        height: 39px;
+        width: 33px;
+        background: url('../images/icons/drupal.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      [href*='twitter.com'] {
+        width: 39px;
+        height: 33px;
+        background: url('../images/icons/twitter.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      [href*='linkedin.com'] {
+        width: 39px;
+        height: 37px;
+        background: url('../images/icons/linkedin.svg') no-repeat center;
+        background-size: contain;
+      }
+
+      [href*='facebook.com'] {
+        width: 17px;
+        height: 39px;
+        background: url('../images/icons/Facebook.svg') no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &-wrapper-bottom {
+    padding: 0 5%;
+    text-align: center;
+
+    .text {
+      font-size: 18px;
+      line-height: 33px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .text_left {
+      color: #454545;
+    }
+
+    .text_right {
+      color: #454545;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 260px 0 0;
+
+    &-wrapper-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
