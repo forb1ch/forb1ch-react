@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
+
 import './menu.scss';
 
 const links = [
@@ -19,8 +21,8 @@ const links = [
 const Menu = () => {
     return (
         <ul className="nav-menu nav-menu_header">
-            {links.map(link => (
-                <li className='nav-menu_item'><a href={link.path}>{link.name}</a></li>
+            {links.map((link, index) => (
+                <li key={index} className='nav-menu_item'><NavLink key={index} to={link.path} activeClassName="active">{link.name}</NavLink></li>
             ))}
         </ul>
     );

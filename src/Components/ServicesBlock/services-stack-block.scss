@@ -1,0 +1,45 @@
+.services-stack-wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 20px;
+
+  .services-stack {
+    flex: 1 0 100%;
+    padding: 10px 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    @media (min-width: 768px) {
+      flex: 1 0 31%;
+    }
+  }
+
+  .h5 {
+    color: #007c77;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    padding-left: 29px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 0px;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      background: #000;
+      border-radius: 5px;
+      content: "";
+    }
+  }
+}

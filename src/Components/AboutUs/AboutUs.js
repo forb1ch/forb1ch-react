@@ -8,7 +8,7 @@ const AboutUs = () => {
             <p className="about-us_text">Drulap mobile & development team</p>
             <div className="about-us-info">
                 <div className="about-us-info_item">
-                    <p className="text text_big">5 years</p>
+                    <p className="text text_big">8 years</p>
                     <p className="text text_small">in intetational market</p>
                 </div>
                 <div className="about-us-info_item">

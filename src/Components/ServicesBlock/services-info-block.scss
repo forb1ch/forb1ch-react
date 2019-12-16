@@ -1,0 +1,24 @@
+.services-info-wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    color: #007c77;
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+
+  li,
+  p,
+  strong {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}

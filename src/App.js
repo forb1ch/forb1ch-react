@@ -3,7 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./Header/Header";
 import Home from "./Pages/Home/Home";
 import Services from "./Pages/Services/Services";
-import AboutUsPage from "./Pages/About-us/Home";
+import AboutUsPage from "./Pages/About-us/AboutUsPage";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Footer from "./Footer/Footer";
 import './App.scss';

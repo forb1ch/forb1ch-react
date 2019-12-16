@@ -51,6 +51,7 @@ html {
   height: 100%;
 
   body {
+    font-family:'Montserrat', sans-serif;
     height: 100%;
   }
 
@@ -58,6 +59,10 @@ html {
     font-size: 14px;
     box-sizing: border-box;
   }
+}
+
+.main-content {
+  padding-bottom: 40px;
 }
 
 *:before,
@@ -117,7 +122,7 @@ h3 {
 }
 
 button {
-  padding: 22px 0 24px 0;
+  padding: 15px 0 15px 0;
   min-width: 240px;
   line-height: 22px;
   font-size: 18px;

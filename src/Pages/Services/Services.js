@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-import Banner from "../../Components/Banner/Banner";
-import AboutUs from "../../Components/AboutUs/AboutUs";
+import ServicesBlock from "../../Components/ServicesBlock/ServicesBlock";
 
 class Services extends Component {
     render () {
@@ -8,9 +7,7 @@ class Services extends Component {
             <div className="App">
                 <section>
                     <div className="main-content">
-                        <h1>Services</h1>
-                        <Banner/>
-                        <AboutUs/>
+                        <ServicesBlock/>
                     </div>
                 </section>
             </div>

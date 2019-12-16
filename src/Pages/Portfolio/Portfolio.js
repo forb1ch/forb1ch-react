@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-import Banner from "../../Components/Banner/Banner";
-import AboutUs from "../../Components/AboutUs/AboutUs";
+import PortfolioBlock from "../../Components/PortfolioBlock/PortfolioBlock";
 
 class Portfolio extends Component {
     render () {
@@ -8,9 +7,7 @@ class Portfolio extends Component {
             <div className="App">
                 <section>
                     <div className="main-content">
-                        <h1>Portfolio</h1>
-                        <Banner/>
-                        <AboutUs/>
+                        <PortfolioBlock/>
                     </div>
                 </section>
             </div>

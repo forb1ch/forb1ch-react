@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Banner from "../../Components/Banner/Banner";
 import AboutUs from "../../Components/AboutUs/AboutUs";
+import OurMissionBlock from "../../Components/OurMission/OurMissionBlock";
 
 class AboutUsPage extends Component {
     render () {
@@ -8,9 +9,9 @@ class AboutUsPage extends Component {
             <div className="App">
                 <section>
                     <div className="main-content">
-                        <h1>AboutUsPage</h1>
                         <Banner/>
                         <AboutUs/>
+                        <OurMissionBlock/>
                     </div>
                 </section>
             </div>
