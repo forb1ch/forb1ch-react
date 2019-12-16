@@ -60,7 +60,7 @@ class PortfolioBlock extends Component {
         }
     }
 
-    toggleMenu = () => {
+    togglePopup = () => {
         this.setState((prevState)=>({active: !prevState.active}))
     }
 
@@ -76,7 +76,7 @@ class PortfolioBlock extends Component {
                             <div className="portfolio-item-image">
                                 <img alt="thumbnail" src={item.imagePath} className="images"/>
                             </div>
-                            <button type="button" onClick={this.toggleMenu}>
+                            <button type="button" onClick={this.togglePopup}>
                                 View Project
                             </button>
                             <PortfolioPopup
@@ -85,7 +85,7 @@ class PortfolioBlock extends Component {
                                 image={item.imageFullSize}
                                 index={index}
                                 isOpen={this.state.active}
-                                toggleFunc={this.toggleMenu}
+                                toggleFunc={this.togglePopup}
                             />
                         </div>
                     ))}
