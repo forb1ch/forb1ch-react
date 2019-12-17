@@ -6,47 +6,47 @@ const portfolioItem = [
     {
         name: 'Projektmagazin',
         imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2019-06/ProjektMagazin.png?itok=TD-V56fS',
-        projectPath: 'https://anyforsoft.com/portfolio/projektmagazin',
+        projectPath: 'https://www.projektmagazin.de/',
         popupTitle: 'Projektmagazin',
         popupContent: 'Projektmagazin content',
         imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2019-06/ProjektMagazin.png',
-        open: 'false',
+        id: 1,
     },
     {
         name: 'WehaveAnyspace',
         imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/whehaveany.png?itok=IVEckbmk',
-        projectPath: 'https://anyforsoft.com/wehaveanyspace',
+        projectPath: 'https://www.wehaveanyspace.com/',
         popupTitle: 'WehaveAnyspace',
         popupContent: 'WehaveAnyspace content',
         imageFullSize: 'https://anyforsoft.com/themes/custom/anyforsoft/images/showcases/monitor.png',
-        open: 'false',
+        id: 2,
     },
     {
         name: 'I AM NIKON',
         imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/nikon_0.png?itok=hyOF16wj',
-        projectPath: 'https://anyforsoft.com/portfolio/i-am-nikon',
+        projectPath: 'https://iamnikon.ru/',
         popupTitle: 'I AM NIKON',
         popupContent: 'I AM NIKON content',
         imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/nikon_0.png',
-        open: 'false',
+        id: 3,
     },
     {
         name: 'Dancoly',
         imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/dancoly_0.png?itok=oynphIQ1',
-        projectPath: 'https://anyforsoft.com/portfolio/dancoly',
+        projectPath: 'http://dancoly.pl/',
         popupTitle: 'Dancoly',
         popupContent: 'Dancoly content',
         imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/dancoly_0.png',
-        open: 'false',
+        id: 4,
     },
     {
         name: 'UAZ contest',
         imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/uaz.png?itok=wnhfsU9T',
-        projectPath: 'https://anyforsoft.com/portfolio/uaz-contest',
+        projectPath: 'http://www.uaz.ru/75',
         popupTitle: 'UAZ contest',
         popupContent: 'UAZ contest content',
         imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/uaz.png',
-        open: 'false',
+        id: 5,
     },
 ];
 
@@ -54,15 +54,19 @@ const portfolioItem = [
 class PortfolioBlock extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            active: false,
-        }
+            visibility: false
+        };
     }
 
-    toggleMenu = () => {
-        this.setState((prevState)=>({active: !prevState.active}))
-    }
+    togglePopup = (id) => {
+        let body = document.querySelector('body');
+
+        this.setState(()=>({
+            visibility: id}));
+
+        body.classList.toggle('popup-opened');
+    };
 
     render () {
         return(
@@ -76,16 +80,19 @@ class PortfolioBlock extends Component {
                             <div className="portfolio-item-image">
                                 <img alt="thumbnail" src={item.imagePath} className="images"/>
                             </div>
-                            <button type="button" onClick={this.toggleMenu}>
+
+                            <button type="button" onClick={() => this.togglePopup(item.id)}>
                                 View Project
                             </button>
+
                             <PortfolioPopup
                                 title={item.popupTitle}
                                 content={item.popupContent}
                                 image={item.imageFullSize}
-                                index={index}
-                                isOpen={this.state.active}
-                                toggleFunc={this.toggleMenu}
+                                projectPath={item.projectPath}
+                                isOpen={this.state.visibility === item.id}
+                                classes={(this.state.visibility === item.id) ? 'visible portfolio-popup' : 'portfolio-popup'}
+                                toggleFunc={this.togglePopup}
                             />
                         </div>
                     ))}
