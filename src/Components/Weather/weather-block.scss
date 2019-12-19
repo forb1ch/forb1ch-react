@@ -1,0 +1,130 @@
+.weather-block {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    color: #007c77;
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  &-form {
+    .field-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    input {
+      padding: 5px;
+      min-height: 35px;
+      line-height: 22px;
+      font-size: 18px;
+      color: #1e1f24;
+      font-family:'Montserrat', sans-serif;
+      font-weight: 300;
+      border: 1px solid #1e1f24;
+
+      @media (max-width: 649px) {
+        margin-right: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 650px) {
+        min-width: 290px;
+      }
+
+      &::placeholder {
+        color: #1e1f24;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid #11ad7f;
+      }
+    }
+
+    .submit {
+      padding: 5px 8px;
+      min-height: 35px;
+      line-height: 22px;
+      font-size: 18px;
+      background: transparent;
+      border: 1px solid #1e1f24;
+      color: #1e1f24;
+      cursor: pointer;
+      font-family:'Montserrat', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      transition: all .4s ease-in-out;
+      transform: scale(1);
+
+      @media (max-width: 649px) {
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 650px) {
+        min-width: 120px;
+        margin-left: 10px;
+      }
+
+      &:active,
+      &:focus {
+        color: #11ad7f;
+        outline: none;
+        border: 1px solid #11ad7f;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+
+    @media (max-width: 649px) {
+      border-bottom: 0;
+      border-right: 1px solid black;
+    }
+
+    @media (min-width: 650px) {
+      border-bottom: 1px solid black;
+    }
+
+    > div {
+      padding: 6px;
+
+      @media (max-width: 649px) {
+        border-bottom: 1px solid black;
+        flex: 1 0 100%;
+      }
+
+      @media (min-width: 650px) {
+        flex: 1 0 auto;
+        padding: 6px;
+        border-right: 1px solid black;
+      }
+    }
+
+    .info-field {
+      display: flex;
+      flex-direction: column;
+    }
+    .info-field span,
+    .info-field strong {
+      text-align: center;
+    }
+
+    .info-field strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}

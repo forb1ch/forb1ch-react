@@ -4,6 +4,7 @@ import AboutUs from "../../Components/AboutUs/AboutUs";
 import ServicesBlock from "../../Components/ServicesBlock/ServicesBlock";
 import OurMissionBlock from "../../Components/OurMission/OurMissionBlock";
 import PortfolioBlock from "../../Components/PortfolioBlock/PortfolioBlock";
+import WeatherBlock from "../../Components/Weather/WeatherBlock";
 
 class Home extends Component {
     render () {
@@ -16,6 +17,7 @@ class Home extends Component {
                         <OurMissionBlock/>
                         <ServicesBlock/>
                         <PortfolioBlock/>
+                        <WeatherBlock/>
                     </div>
                 </section>
             </div>

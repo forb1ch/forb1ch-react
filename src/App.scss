@@ -121,7 +121,7 @@ h3 {
   font-size: 14px;
 }
 
-button {
+button:not(.submit) {
   padding: 15px 0 15px 0;
   min-width: 240px;
   line-height: 22px;
@@ -142,4 +142,10 @@ button {
     transition: all .4s ease-in-out;
     transform: scale(1.03);
   }
+}
+
+.error-msg {
+  width: 100%;
+  color: darkred;
+  margin-bottom: 5px;
 }
