@@ -1,0 +1,35 @@
+.burger-menu {
+	display: flex;
+	justify-content: flex-end;
+
+	svg {
+		font-size: 21px;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			color: #11ad7f;
+			transition: all .2s ease-in-out;
+		}
+	}
+}
+
+.navigation {
+	max-width: 290px;		
+	position: fixed;
+	right: 0;
+	top: 85px;
+	z-index: 999;
+	display: flex;
+	background: white;
+	padding: 0 15px;
+    flex-direction: column;
+	transform: translateX(300px);
+	transition: all .2s ease-in-out;	
+
+	&.opened {
+		border: 1px solid;
+		transform: translateX(0);
+		transition: all .2s ease-in-out;
+	}
+}

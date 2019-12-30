@@ -31,10 +31,10 @@ class WeatherBlock extends Component {
             this.setState({
                 town: data.name,
                 country: data.sys.country,
-                temp: data.main.temp,
+                temp: Math.round(data.main.temp),
                 feels_like: data.main.feels_like,
                 weather: data.weather[0].description,
-                wind: data.wind.speed,
+                wind: Math.round(data.wind.speed),
                 error: ""
             });
         } else {

@@ -5,6 +5,10 @@ import './menu.scss';
 
 const links = [
     {
+        name: 'Home',
+        path: '/',
+    },
+    {
         name: 'About us',
         path: '/about-us',
     },
@@ -22,7 +26,7 @@ const Menu = () => {
     return (
         <ul className="nav-menu nav-menu_header">
             {links.map((link, index) => (
-                <li key={index} className='nav-menu_item'><NavLink key={index} to={link.path} activeClassName="active">{link.name}</NavLink></li>
+                <li key={index} className='nav-menu_item'><NavLink key={index} to={link.path} exact activeClassName="active">{link.name}</NavLink></li>
             ))}
         </ul>
     );

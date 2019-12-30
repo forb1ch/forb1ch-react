@@ -11,7 +11,7 @@ import './App.scss';
 function App() {
   return (
       <BrowserRouter>
-          <div className="App">
+          <div className="App-wrapper">
               <Header/>
               <Route exact path="/" component={Home}/>
               <Route exact path="/about-us" component={AboutUsPage}/>

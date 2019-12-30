@@ -7,20 +7,12 @@
 }
 
 .header {
-  padding-top: 40px;
   position: relative;
-
-  &:before {
-    height: 40px;
-    content: '';
-    display: block;
-    background: #000;
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
 
   .logo-block {
     margin-right: 10px;
