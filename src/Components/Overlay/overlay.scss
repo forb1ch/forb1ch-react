@@ -1,0 +1,19 @@
+.overlay-wrapper {
+  position: fixed;
+  top: 85px;
+  right: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all .2s ease-in-out;
+  border-top: 2px solid;
+
+  &.opened {
+    transform: translateX(0%);
+    transition: all .2s ease-in-out;
+  }
+}

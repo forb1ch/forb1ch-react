@@ -125,10 +125,17 @@ h3 {
   font-size: 14px;
 }
 
-button:not(.submit) {
-  padding: 15px 0 15px 0;
+button.button_more {
+  background: transparent;
+  border: 0;
+}
+
+button.button_more a,
+button:not(.submit):not(.button_more):not(.close-btn) {
+  padding: 10px 0;
   min-width: 240px;
   line-height: 22px;
+  display: block;
   font-size: 18px;
   background: transparent;
   border: 1px solid #1e1f24;

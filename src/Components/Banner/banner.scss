@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  margin-bottom: 60px;
 
   &:after {
     background: url('../../images/bgtable.png') no-repeat top center;
@@ -72,6 +73,7 @@
 @media (min-width: 1200px) {
   .baner {
     min-height: 760px;
+    margin-bottom: 500px;
 
     &:after {
       background-size: cover;

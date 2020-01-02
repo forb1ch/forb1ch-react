@@ -6,8 +6,12 @@
   flex-wrap: wrap;
 
   .nav-menu_item {
-    line-height: 22px;
-    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .nav-menu_item a {
+    line-height: 30px;
+    font-size: 22px;
     color: #1e1f24;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
