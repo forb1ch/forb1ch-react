@@ -26,8 +26,6 @@ class WeatherBlock extends Component {
             api_url = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${WEATHER_API}&units=metric`);
             data = await api_url.json();
 
-            console.log(data)
-
             this.setState({
                 town: data.name,
                 country: data.sys.country,

@@ -20,6 +20,10 @@ const links = [
         name: 'Portfolio',
         path: '/portfolio',
     },
+    {
+        name: 'Skills',
+        path: '/skills',
+    },
 ];
 
 const Menu = (props) => {

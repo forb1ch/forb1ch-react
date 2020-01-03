@@ -1,0 +1,26 @@
+[{
+  "id": 1,
+  "skillName": "Drupal",
+  "progress": ""
+},
+  {
+    "id": 2,
+    "skillName": "Scss/Sass/Less",
+    "progress": ""
+  },
+  {
+    "id": 3,
+    "skillName": "Javascript",
+    "progress": ""
+  },
+  {
+    "id": 4,
+    "skillName": "PHP",
+    "progress": ""
+  },
+  {
+    "id": 5,
+    "skillName": "Javascript frameworks (React , Angular, Vue)",
+    "progress": ""
+  }
+]
