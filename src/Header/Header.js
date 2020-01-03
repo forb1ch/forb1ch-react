@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from '../images/icons/any-logo.svg';
 import MenuToggle from "../Components/Menu/MenuToggle"
 import Overlay from "../Components/Overlay/Overlay";
+import { NavLink } from 'react-router-dom';
 import './header.scss'
 
 class Header extends Component {
@@ -19,7 +20,7 @@ class Header extends Component {
         return(
             <header className="header">
                 <div className="header_wrapper">
-                    <a className="logo-block logo_block_header" href="/"><img src={logo} alt="logo" className="logo"/></a>
+                    <NavLink to='/' exact activeClassName="active" className="logo-block logo_block_header"><img src={logo} alt="logo" className="logo"/></NavLink>
 
                     <MenuToggle
                         onToggle={this.toggleMenuHandler}
