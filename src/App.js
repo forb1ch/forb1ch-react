@@ -14,11 +14,11 @@ function App() {
       <BrowserRouter>
           <div className="App-wrapper">
               <Header/>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/about-us" component={AboutUsPage}/>
-              <Route exact path="/services" component={Services}/>
-              <Route exact path="/portfolio" component={Portfolio}/>
-              <Route exact path="/skills" component={SkillsPage}/>
+              <Route exact path="https://forb1ch.github.io/" component={Home}/>
+              <Route exact path="https://forb1ch.github.io/about-us" component={AboutUsPage}/>
+              <Route exact path="https://forb1ch.github.io/services" component={Services}/>
+              <Route exact path="https://forb1ch.github.io/portfolio" component={Portfolio}/>
+              <Route exact path="https://forb1ch.github.io/skills" component={SkillsPage}/>
               <Footer/>
           </div>
       </BrowserRouter>
