@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './menu.scss';
 
@@ -34,7 +34,7 @@ const Menu = (props) => {
     return (
         <ul className="nav-menu nav-menu_header">
             {links.map((link, index) => (
-                <li key={index} className='nav-menu_item' onClick={ componentDidMount }><NavLink key={index} to={link.path} exact activeClassName="active" onClick={ props.onOpenLink }>{link.name}</NavLink></li>
+                <li key={index} className='nav-menu_item' onClick={ componentDidMount }><Link key={index} to={link.path} exact activeClassName="active" onClick={ props.onOpenLink }>{link.name}</Link></li>
             ))}
         </ul>
     );
