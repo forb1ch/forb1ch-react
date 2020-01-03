@@ -4,7 +4,7 @@ import './services-info-block.scss'
 
 const ServicesBlock = () => {
     return (
-        <section>
+        <div className='services-section'>
             <div className="services-info-wrapper">
                 <h2 className="h2 title-left">Our Services</h2>
                 <p>AnyforSoft works in close partnership with clients on every stage of a project. We are ready to
@@ -147,7 +147,7 @@ const ServicesBlock = () => {
                     </article>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

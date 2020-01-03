@@ -3,7 +3,7 @@ import './our-mission-block.scss';
 
 const OurMissionBlock = () => {
     return (
-        <section className="mission-wrapper">
+        <div className="mission-wrapper">
             <h2 className="title">Our Mission, Vision and Values</h2>
 
             <div className="mission-text">
@@ -51,7 +51,7 @@ const OurMissionBlock = () => {
 
                 <p>We adapt to the continually evolving business environment to be able to respond to the customer’s
                     needs.<br/></p></div>
-        </section>
+        </div>
     );
 }
 
