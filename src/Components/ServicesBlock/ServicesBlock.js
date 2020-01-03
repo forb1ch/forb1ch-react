@@ -34,7 +34,7 @@ const ServicesBlock = () => {
 
             <div className="services-stack-wrapper">
                 <div className="services-stack">
-                    <article className="small">
+                    <div className="small">
                         <h5 className="h5">Drupal 8</h5>
                         <ul>
                             <li>Composer</li>
@@ -52,8 +52,8 @@ const ServicesBlock = () => {
                             <li>Layout builder</li>
                             <li>Acquia Cloud</li>
                         </ul>
-                    </article>
-                    <article className="small">
+                    </div>
+                    <div className="small">
                         <h5 className="h5">Drupal 7</h5>
                         <ul>
                             <li>Drush</li>
@@ -66,10 +66,10 @@ const ServicesBlock = () => {
                             <li>Paragraphs</li>
                             <li>Context</li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
                 <div className="services-stack">
-                    <article className="small">
+                    <div className="small">
                         <h5 className="h5">Workflow</h5>
                         <ul>
                             <li>Git
@@ -99,8 +99,8 @@ const ServicesBlock = () => {
                                     <li>Performance review</li>
                                 </ul></li>
                         </ul>
-                    </article>
-                    <article className="small">
+                    </div>
+                    <div className="small">
                         <h5 className="h5">LAMP Stack</h5>
                         <ul>
                             <li>Linux</li>
@@ -111,10 +111,10 @@ const ServicesBlock = () => {
                             <li>Memcache</li>
                             <li>Varnish</li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
                 <div className="services-stack">
-                    <article className="small">
+                    <div className="small">
                         <h5 className="h5">Front-end</h5>
                         <ul>
                             <li>HTML5</li>
@@ -129,8 +129,8 @@ const ServicesBlock = () => {
                             <li>BrowserStack</li>
                             <li>Pixel-Perfect</li>
                         </ul>
-                    </article>
-                    <article className="small">
+                    </div>
+                    <div className="small">
                         <h5 className="h5">Alternative technologies</h5>
                         <ul>
                             <li>Symfony Framework</li>
@@ -144,7 +144,7 @@ const ServicesBlock = () => {
                                     <li>Ionic Framework</li>
                                 </ul></li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
             </div>
         </div>

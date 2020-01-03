@@ -6,6 +6,10 @@
   display: flex;
   margin-bottom: 20px;
 
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+
   .services-stack {
     flex: 1 0 100%;
     padding: 10px 3%;
