@@ -19,7 +19,7 @@ class Header extends Component {
         return(
             <header className="header">
                 <div className="header_wrapper">
-                    <a className="logo-block logo_block_header" href="https://forb1ch.github.io/"><img src={logo} alt="logo" className="logo"/></a>
+                    <a className="logo-block logo_block_header" href="https://forb1ch.github.io/home"><img src={logo} alt="logo" className="logo"/></a>
 
                     <MenuToggle
                         onToggle={this.toggleMenuHandler}

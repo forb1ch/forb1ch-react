@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
           <div className="App-wrapper">
               <Header/>
-              <Route exact path="https://forb1ch.github.io/" component={Home}/>
+              <Route exact path="https://forb1ch.github.io/home" component={Home}/>
               <Route exact path="https://forb1ch.github.io/about-us" component={AboutUsPage}/>
               <Route exact path="https://forb1ch.github.io/services" component={Services}/>
               <Route exact path="https://forb1ch.github.io/portfolio" component={Portfolio}/>
