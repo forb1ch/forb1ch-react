@@ -15,7 +15,7 @@
     bottom: -70px;
     content: '';
     display: block;
-    height: 32%;
+    height: 25%;
     left: 50%;
     position: absolute;
     right: 50%;
@@ -69,6 +69,11 @@
   }
 }
 
+@media (min-width: 768px) {
+  .baner:after {
+    height: 32%;
+  }
+}
 
 @media (min-width: 1200px) {
   .baner {
