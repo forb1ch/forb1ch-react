@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://forb1ch.github.io/forb1ch-react",
+  "homepage": "http://forb1ch.github.io/forb1ch-react/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
