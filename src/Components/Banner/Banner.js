@@ -6,7 +6,7 @@ const Banner = () => {
         <div className="baner">
             <p className="baner_text baner_text_big"> Drupal 8 Web and Mobile Apps development team</p>
             <p className="baner_text baner_text_small"> Make your projects easier with AnyforSoft</p>
-            <button className="button button_more"><a href="/portfolio">Our portfolio</a></button>
+            <button className="button default-btn"><a href="/portfolio">Our portfolio</a></button>
         </div>
     );
 }
