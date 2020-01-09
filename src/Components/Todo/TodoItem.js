@@ -26,6 +26,14 @@ class TodoItem extends Component {
             );
         };
 
+        this.resetTasks = () => {
+            this.setState(state => ({
+                    done: false,
+                    inProgress: false
+                })
+            );
+        };
+
         this.addClass = (doneState, inProgressState) => {
             if (doneState) {
                 return 'todo-item done';
@@ -46,9 +54,7 @@ class TodoItem extends Component {
 
         return (
             <div className={this.addClass(this.state.done, this.state.inProgress)}>
-                <input type="checkbox" id={id} onClick={this.doneTasks}/>
-
-                <label htmlFor={id} >{taskname}{ done && <span> - Done</span>}{ inProgress && <span> - In progress</span>}</label>
+                <div className='todo-item-inner' id={id} onClick={this.doneTasks}>{taskname}{ done && <span> - Done</span>}{ inProgress && <span> - In progress</span>}</div>
 
                 <div className='todo-buttons-wrapper'>
                     <button type='button' className='btn btn-todo btn-trash' onClick={onDeleted}>
@@ -57,6 +63,13 @@ class TodoItem extends Component {
 
                     <button type='button' className='btn btn-todo btn-exclamation' onClick={this.inProgressTasks}>
                         <FontAwesomeIcon icon={faExclamation}/>
+                    </button>
+                </div>
+
+                <div className='reset-button-wrapper'>
+                    <button type='button' className='btn btn-todo btn-reset' onClick={this.resetTasks}>
+                        <span>Reset</span>
+                        <FontAwesomeIcon icon={faRetweet}/>
                     </button>
                 </div>
             </div>

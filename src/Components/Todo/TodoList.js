@@ -10,7 +10,6 @@ const TodoList = ({ todos , onDeleted, onReset }) => {
             <li key={item.id} className='todo-item-wrapper'>
                 <TodoItem id={item.id} taskname={item.taskName}
                 onDeleted={ () => onDeleted(item.id) }
-                onReset={ () => onReset(item.id) }
                 />
             </li>
         )
@@ -22,13 +21,6 @@ const TodoList = ({ todos , onDeleted, onReset }) => {
             <ul className='todo-list'>
                 { todosTasks }
             </ul>
-
-            <div className='reset-button-wrapper'>
-                <button type='button' className='btn btn-todo btn-reset' onClick={onReset}>
-                    <span>Reset</span>
-                    <FontAwesomeIcon icon={faRetweet}/>
-                </button>
-            </div>
         </div>
     );
 };
