@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "taskName": "Make first",
+    "taskName": "Make coffee",
     "done": false,
     "inProgress": false
   },
   {
     "id": 2,
-    "taskName": "Make second",
+    "taskName": "Make JS functionality",
     "done": false,
     "inProgress": false
   },
   {
     "id": 3,
-    "taskName": "Make third",
+    "taskName": "Make Drupal functionality",
     "done": false,
     "inProgress": false
   },
   {
     "id": 4,
-    "taskName": "Make fourth",
+    "taskName": "Make Mobile Apps",
     "done": false,
     "inProgress": false
   },
   {
     "id": 5,
-    "taskName": "Make fifth",
+    "taskName": "Make your team happy ;D",
     "done": false,
     "inProgress": false
   }

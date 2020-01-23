@@ -1,21 +1,30 @@
 import React, {Component} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExclamation, faTrash, faRetweet} from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 class TodoItem extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            done: false,
-            inProgress: false
+            done: this.props.done,
+            inProgress: this.props.inProgress
         };
 
         this.doneTasks = () => {
-            this.setState(state => ({
-                    done: !this.state.done,
-                })
-            );
+            let id = this.props.id;
+
+            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+
+            const doneState = {
+                done: !this.state.done
+            };
+
+            axios.put(url + id, doneState).then(function (response) {
+                this.setState(state => (doneState)
+                );
+            }.bind(this));
         };
 
         this.inProgressTasks = () => {
@@ -48,9 +57,8 @@ class TodoItem extends Component {
     }
 
     render() {
-        const { id, taskname , onDeleted} = this.props;
-
-        const { done, inProgress} = this.state;
+        const { id, taskname , onDeleted } = this.props;
+        let { done, inProgress} = this.state;
 
         return (
             <div className={this.addClass(this.state.done, this.state.inProgress)}>

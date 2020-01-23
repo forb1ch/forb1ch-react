@@ -1,15 +1,15 @@
 import React from "react";
 import './todo.scss';
 import TodoItem from "./TodoItem";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faRetweet} from "@fortawesome/free-solid-svg-icons";
 
-const TodoList = ({ todos , onDeleted, onReset }) => {
+const TodoList = ({ todos , onDeleted, onReset, done, inProgress }) => {
     const todosTasks = todos.map((item) => {
         return (
             <li key={item.id} className='todo-item-wrapper'>
                 <TodoItem id={item.id} taskname={item.taskName}
                 onDeleted={ () => onDeleted(item.id) }
+                done={item.done}
+                inProgress={item.inProgress}
                 />
             </li>
         )

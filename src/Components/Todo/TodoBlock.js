@@ -1,59 +1,43 @@
 import React, {Component} from "react";
-// import todoJson from '../../data/todo.json';
+import todoJson from '../../data/todo.json';
 import TodoList from "./TodoList";
 import './todo.scss';
 import TodoItemForm from "./TodoItemForm";
+import axios from 'axios';
 
 class TodoBlock extends Component {
     state = {
-        todosData: [
-            {
-                "id": 1,
-                "taskName": "Make coffee",
-                "done": false,
-                "inProgress": false
-            },
-            {
-                "id": 2,
-                "taskName": "Make JS functionality",
-                "done": false,
-                "inProgress": false
-            },
-            {
-                "id": 3,
-                "taskName": "Make Drupal functionality",
-                "done": false,
-                "inProgress": false
-            },
-            {
-                "id": 4,
-                "taskName": "Make Mobile Apps",
-                "done": false,
-                "inProgress": false
-            },
-            {
-                "id": 5,
-                "taskName": "Make your team happy ;D",
-                "done": false,
-                "inProgress": false
-            }
-        ]
+        todosData: JSON.parse(JSON.stringify(todoJson)),
     };
 
     lastId = [...this.state.todosData].pop().id + 1;
 
-    removeTask = (id) => {
-        this.setState(({todosData}) => {
-            const idx = todosData.findIndex((el) => el.id === id);
-            const newTodos = [
-                ...todosData.slice(0, idx),
-                ...todosData.slice(idx + 1)
-            ];
+    componentDidMount() {
+        axios.get('http://5e0f48f09576aa0014666536.mockapi.io/todos').then(function (response) {
+            // handle success
+            this.setState(state => ({
+                 todosData: JSON.parse(JSON.stringify(response.data)),
+                })
+            );
+        }.bind(this));
+    }
 
-            return {
-                todosData: newTodos
-            }
-        });
+    removeTask = (id) => {
+        const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+
+        axios.delete(url + id).then(function (response) {
+            this.setState(({todosData}) => {
+                const idx = todosData.findIndex((el) => el.id === id);
+                const newTodos = [
+                    ...todosData.slice(0, idx),
+                    ...todosData.slice(idx + 1)
+                ];
+
+                return {
+                    todosData: newTodos
+                }
+            });
+        }.bind(this));
     };
 
     addTodoItem = (text) => {
@@ -64,16 +48,19 @@ class TodoBlock extends Component {
             "inProgress": false
         };
 
-        this.setState(({ todosData }) => {
-            const newTodos = [
-                ...todosData,
-                newTodoItem
-            ];
+        axios.post('http://5e0f48f09576aa0014666536.mockapi.io/todos', newTodoItem)
+            .then(function (response) {
+                this.setState(({ todosData }) => {
+                    const newTodos = [
+                        ...todosData,
+                        newTodoItem
+                    ];
 
-            return {
-                todosData: newTodos
-            }
-        });
+                    return {
+                        todosData: newTodos
+                    }
+                });
+            }.bind(this));
     };
 
     render() {
