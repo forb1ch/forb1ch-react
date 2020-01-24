@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import axios from "axios";
 import WeatherForm from "./WeatherForm";
 import './weather-block.scss';
 
@@ -19,22 +20,22 @@ class WeatherBlock extends Component {
     gettingWeather = async (event) => {
         event.preventDefault();
         let town = event.target.elements.town.value;
-        let api_url;
         let data;
 
         if (town.length > 3) {
-            api_url = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${WEATHER_API}&units=metric`);
-            data = await api_url.json();
+            axios.get(`//api.openweathermap.org/data/2.5/weather?q=${town}&appid=${WEATHER_API}&units=metric`).then(function (response) {
+                data = response.data;
 
-            this.setState({
-                town: data.name,
-                country: data.sys.country,
-                temp: Math.round(data.main.temp),
-                feels_like: data.main.feels_like,
-                weather: data.weather[0].description,
-                wind: Math.round(data.wind.speed),
-                error: ""
-            });
+                this.setState({
+                    town: data.name,
+                    country: data.sys.country,
+                    temp: Math.round(data.main.temp),
+                    feels_like: data.main.feels_like,
+                    weather: data.weather[0].description,
+                    wind: Math.round(data.wind.speed),
+                    error: ""
+                });
+            }.bind(this));
         } else {
             this.setState({
                 town: undefined,
