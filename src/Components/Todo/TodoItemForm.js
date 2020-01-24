@@ -49,7 +49,7 @@ export default class TodoItemForm extends Component {
                 <div className='todo-textarea'>
                     <textarea name="AddTodo" id="1" cols="30" rows="2" placeholder='Type todo task' value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)}></textarea>
                 </div>
-                {this.state.errorMsg && <div>{this.state.errorMsg}</div>}
+                {this.state.errorMsg && <div className="error-msg">{this.state.errorMsg}</div>}
 
                 {this.state.inputValue &&
                 <button
