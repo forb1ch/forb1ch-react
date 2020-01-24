@@ -33,7 +33,6 @@ class WeatherBlock extends Component {
                     feels_like: data.main.feels_like,
                     weather: data.weather[0].description,
                     wind: Math.round(data.wind.speed),
-                    error: ""
                 });
             }.bind(this));
         } else {
@@ -43,8 +42,24 @@ class WeatherBlock extends Component {
                 temp: undefined,
                 sunrise: undefined,
                 sunset: undefined,
+            });
+        }
+
+        if (town.length > 3) {
+            this.setState({
+                error: ""
+            });
+        }
+        else {
+            this.setState({
                 error: "Put town to input"
             });
+
+            setTimeout(() => {
+                this.setState({
+                    error: ""
+                });
+            }, 2000)
         }
     }
 
