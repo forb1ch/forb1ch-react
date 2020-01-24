@@ -17,7 +17,7 @@ const TodoList = ({ todos , onDeleted, onReset, done, inProgress }) => {
 
     return (
         <div className='todo-list-wrapper'>
-            <h1 className='todo-title'>What tasks do you done?</h1>
+            <h1 className='todo-title'>What status of your tasks?</h1>
             <ul className='todo-list'>
                 { todosTasks }
             </ul>
