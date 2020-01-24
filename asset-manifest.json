@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/forb1ch-react/static/css/main.24f41fac.chunk.css",
-    "main.js": "/forb1ch-react/static/js/main.8a36f2e2.chunk.js",
-    "main.js.map": "/forb1ch-react/static/js/main.8a36f2e2.chunk.js.map",
+    "main.css": "/forb1ch-react/static/css/main.073684e2.chunk.css",
+    "main.js": "/forb1ch-react/static/js/main.96e93ccb.chunk.js",
+    "main.js.map": "/forb1ch-react/static/js/main.96e93ccb.chunk.js.map",
     "runtime-main.js": "/forb1ch-react/static/js/runtime-main.dab1993e.js",
     "runtime-main.js.map": "/forb1ch-react/static/js/runtime-main.dab1993e.js.map",
     "static/js/2.fecf9294.chunk.js": "/forb1ch-react/static/js/2.fecf9294.chunk.js",
     "static/js/2.fecf9294.chunk.js.map": "/forb1ch-react/static/js/2.fecf9294.chunk.js.map",
     "index.html": "/forb1ch-react/index.html",
-    "precache-manifest.6c39fceb3a2b15a376dc7a71c85b5913.js": "/forb1ch-react/precache-manifest.6c39fceb3a2b15a376dc7a71c85b5913.js",
+    "precache-manifest.2c5bf95bdd6f511c99895df861e48530.js": "/forb1ch-react/precache-manifest.2c5bf95bdd6f511c99895df861e48530.js",
     "service-worker.js": "/forb1ch-react/service-worker.js",
-    "static/css/main.24f41fac.chunk.css.map": "/forb1ch-react/static/css/main.24f41fac.chunk.css.map",
+    "static/css/main.073684e2.chunk.css.map": "/forb1ch-react/static/css/main.073684e2.chunk.css.map",
     "static/js/2.fecf9294.chunk.js.LICENSE": "/forb1ch-react/static/js/2.fecf9294.chunk.js.LICENSE",
     "static/media/footer.scss": "/forb1ch-react/static/media/twitter.f50c6910.svg",
     "static/media/App.scss": "/forb1ch-react/static/media/Montserrat-SemiBold.92e95e61.woff",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.dab1993e.js",
     "static/js/2.fecf9294.chunk.js",
-    "static/css/main.24f41fac.chunk.css",
-    "static/js/main.8a36f2e2.chunk.js"
+    "static/css/main.073684e2.chunk.css",
+    "static/js/main.96e93ccb.chunk.js"
   ]
 }
