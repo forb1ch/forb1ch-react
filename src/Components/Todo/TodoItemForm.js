@@ -12,10 +12,9 @@ export default class TodoItemForm extends Component {
     addItem = () => {
         if (this.state.inputValue.length > 3) {
             this.props.onAddTodo(this.state.inputValue);
-            this.state.inputValue = '';
-            this.state.errorMsg = '';
 
             this.setState({
+                inputValue: '',
                 errorMsg: ''
             });
         }

@@ -1,51 +1,56 @@
 import React, {Component} from "react";
+import proj from '../../images/portfolio/Projektmagazin.png';
+import WehaveAnyspace from '../../images/portfolio/WehaveAnyspace.png';
+import nikon from '../../images/portfolio/nikon.png';
+import dancoly from '../../images/portfolio/nikon.png';
+import uaz from '../../images/portfolio/uaz.png';
 import './portfolio-block.scss';
 import PortfolioPopup from "./PortfolioPopup";
 
 const portfolioItem = [
     {
         name: 'Projektmagazin',
-        imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2019-06/ProjektMagazin.png?itok=TD-V56fS',
+        imagePath: proj,
         projectPath: 'https://www.projektmagazin.de/',
         popupTitle: 'Projektmagazin',
         popupContent: 'Projektmagazin content',
-        imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2019-06/ProjektMagazin.png',
+        imageFullSize:proj,
         id: 1,
     },
     {
         name: 'WehaveAnyspace',
-        imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/whehaveany.png?itok=IVEckbmk',
+        imagePath: WehaveAnyspace,
         projectPath: 'https://www.wehaveanyspace.com/',
         popupTitle: 'WehaveAnyspace',
         popupContent: 'WehaveAnyspace content',
-        imageFullSize: 'https://anyforsoft.com/themes/custom/anyforsoft/images/showcases/monitor.png',
+        imageFullSize: WehaveAnyspace,
         id: 2,
     },
     {
         name: 'I AM NIKON',
-        imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/nikon_0.png?itok=hyOF16wj',
+        imagePath: nikon,
         projectPath: 'https://iamnikon.ru/',
         popupTitle: 'I AM NIKON',
         popupContent: 'I AM NIKON content',
-        imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/nikon_0.png',
+        imageFullSize: nikon,
         id: 3,
     },
     {
         name: 'Dancoly',
-        imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/dancoly_0.png?itok=oynphIQ1',
+        imagePath: dancoly,
         projectPath: 'http://dancoly.pl/',
         popupTitle: 'Dancoly',
         popupContent: 'Dancoly content',
-        imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/dancoly_0.png',
+        imageFullSize: dancoly,
         id: 4,
     },
     {
         name: 'UAZ contest',
-        imagePath: 'https://anyforsoft.com/sites/default/files/styles/blog_wide/public/portfolio/2016-09/uaz.png?itok=wnhfsU9T',
+        imagePath: uaz,
         projectPath: 'http://www.uaz.ru/75',
         popupTitle: 'UAZ contest',
         popupContent: 'UAZ contest content',
-        imageFullSize: 'https://anyforsoft.com/sites/default/files/portfolio/2016-09/uaz.png',
+        imageFullSize: uaz,
         id: 5,
     },
 ];
