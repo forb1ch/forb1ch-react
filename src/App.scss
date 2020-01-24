@@ -129,14 +129,21 @@ button {
   background: transparent;
   border: 1px solid #1e1f24;
   cursor: pointer;
+  padding: 0;
 }
 
+button.banner-btn,
 button.button_more {
   border: 0;
 }
 
+button.banner-btn a {
+  border: 1px solid #1e1f24;
+}
+
 button.button_more a,
-.default-btn {
+button.banner-btn a,
+.default-btn:not(.banner-btn) {
   padding: 10px 0;
   min-width: 240px;
   line-height: 22px;
