@@ -1,25 +1,25 @@
 import React, {Component} from "react";
-import todoJson from '../../data/todo.json';
+import axios from 'axios';
 import TodoList from "./TodoList";
 import './todo.scss';
 import TodoItemForm from "./TodoItemForm";
-import axios from 'axios';
 
 class TodoBlock extends Component {
     state = {
-        todosData: JSON.parse(JSON.stringify(todoJson)),
+        todosData: [{}],
+        response: false
     };
 
-    lastId = [...this.state.todosData].pop().id + 1;
 
     componentDidMount() {
         axios.get('http://5e0f48f09576aa0014666536.mockapi.io/todos').then(function (response) {
-            // handle success
+
             this.setState(state => ({
-                 todosData: JSON.parse(JSON.stringify(response.data)),
-                })
-            );
-        }.bind(this));
+                 todosData: response.data,
+                }));
+        }.bind(this)).then((response) => {
+            this.setState({response: true})
+        })
     }
 
     removeTask = (id) => {
@@ -40,9 +40,12 @@ class TodoBlock extends Component {
         }.bind(this));
     };
 
+
     addTodoItem = (text) => {
+        let lastId = Number([...this.state.todosData].pop().id) + 1;
+
         const newTodoItem = {
-            "id": this.lastId++,
+            "id": lastId++,
             "taskName": text,
             "done": false,
             "inProgress": false
@@ -64,12 +67,18 @@ class TodoBlock extends Component {
     };
 
     render() {
-        return (
-            <div className='todo-block-wrapper'>
-                <TodoList todos={this.state.todosData} onDeleted={ this.removeTask }/>
-                <TodoItemForm onAddTodo={this.addTodoItem}/>
-            </div>
-        );
+        const { todosData , response } = this.state;
+
+        if (!response) {
+            return <div>Loading...</div>;
+        } else {
+            return (
+                <div className='todo-block-wrapper'>
+                    <TodoList todos={todosData} onDeleted={ this.removeTask }/>
+                    <TodoItemForm onAddTodo={this.addTodoItem}/>
+                </div>
+            );
+        }
     }
 }
 

@@ -21,8 +21,8 @@ const links = [
         path: '/portfolio',
     },
     {
-        name: 'Your Skills',
-        path: '/skills',
+        name: 'Your Todos',
+        path: '/todos',
     },
 ];
 

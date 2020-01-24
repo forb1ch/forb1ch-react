@@ -18,7 +18,8 @@ class TodoItem extends Component {
             const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
 
             const doneState = {
-                done: !this.state.done
+                done: !this.state.done,
+                inProgress: false
             };
 
             axios.put(url + id, doneState).then(function (response) {
@@ -28,19 +29,35 @@ class TodoItem extends Component {
         };
 
         this.inProgressTasks = () => {
-            this.setState(state => ({
-                    done: false,
-                    inProgress: !this.state.inProgress
-                })
-            );
+            let id = this.props.id;
+
+            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+
+            const inProgressState = {
+                done: false,
+                inProgress: true
+            };
+
+            axios.put(url + id, inProgressState).then(function (response) {
+                this.setState(state => (inProgressState)
+                );
+            }.bind(this));
         };
 
         this.resetTasks = () => {
-            this.setState(state => ({
-                    done: false,
-                    inProgress: false
-                })
-            );
+            let id = this.props.id;
+
+            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+
+            const resetState = {
+                done: false,
+                inProgress: false
+            };
+
+            axios.put(url + id, resetState).then(function (response) {
+                this.setState(state => (resetState)
+                );
+            }.bind(this));
         };
 
         this.addClass = (doneState, inProgressState) => {
@@ -69,13 +86,13 @@ class TodoItem extends Component {
                         <FontAwesomeIcon icon={faTrash}/>
                     </button>
 
-                    <button type='button' className='btn btn-todo btn-exclamation' onClick={this.inProgressTasks}>
+                    <button type='button' className='btn btn-todo btn-exclamation' id={id} onClick={this.inProgressTasks}>
                         <FontAwesomeIcon icon={faExclamation}/>
                     </button>
                 </div>
 
                 <div className='reset-button-wrapper'>
-                    <button type='button' className='btn btn-todo btn-reset' onClick={this.resetTasks}>
+                    <button type='button' className='btn btn-todo btn-reset' id={id} onClick={this.resetTasks}>
                         <span>Reset</span>
                         <FontAwesomeIcon icon={faRetweet}/>
                     </button>

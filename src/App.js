@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 import Services from "./Pages/Services/Services";
 import AboutUsPage from "./Pages/About-us/AboutUsPage";
 import Portfolio from "./Pages/Portfolio/Portfolio";
-import SkillsPage from "./Pages/SkillsPage/SkillsPage";
+import TodoPage from "./Pages/TodoPage/TodoPage";
 import Footer from "./Footer/Footer";
 import './App.scss';
 
@@ -18,7 +18,7 @@ function App() {
               <Route path="/about-us" component={AboutUsPage}/>
               <Route path="/services" component={Services}/>
               <Route path="/portfolio" component={Portfolio}/>
-              <Route path="/skills" component={SkillsPage}/>
+              <Route path="/todos" component={TodoPage}/>
               <Footer/>
           </div>
       </HashRouter>
