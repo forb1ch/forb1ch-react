@@ -10,20 +10,19 @@ class TodoBlock extends Component {
         response: false
     };
 
-
     componentDidMount() {
-        axios.get('http://5e0f48f09576aa0014666536.mockapi.io/todos').then(function (response) {
+        axios.get('//5e0f48f09576aa0014666536.mockapi.io/todos').then(function (response) {
 
             this.setState(state => ({
                  todosData: response.data,
                 }));
         }.bind(this)).then((response) => {
-            this.setState({response: true})
+            this.setState({response: true});
         })
     }
 
     removeTask = (id) => {
-        const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+        const url = '//5e0f48f09576aa0014666536.mockapi.io/todos/';
 
         axios.delete(url + id).then(function (response) {
             this.setState(({todosData}) => {
@@ -51,7 +50,7 @@ class TodoBlock extends Component {
             "inProgress": false
         };
 
-        axios.post('http://5e0f48f09576aa0014666536.mockapi.io/todos', newTodoItem)
+        axios.post('//5e0f48f09576aa0014666536.mockapi.io/todos', newTodoItem)
             .then(function (response) {
                 this.setState(({ todosData }) => {
                     const newTodos = [

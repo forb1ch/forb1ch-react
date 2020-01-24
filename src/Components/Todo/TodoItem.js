@@ -15,7 +15,7 @@ class TodoItem extends Component {
         this.doneTasks = () => {
             let id = this.props.id;
 
-            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+            const url = '//5e0f48f09576aa0014666536.mockapi.io/todos/';
 
             const doneState = {
                 done: !this.state.done,
@@ -31,7 +31,7 @@ class TodoItem extends Component {
         this.inProgressTasks = () => {
             let id = this.props.id;
 
-            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+            const url = '//5e0f48f09576aa0014666536.mockapi.io/todos/';
 
             const inProgressState = {
                 done: false,
@@ -47,7 +47,7 @@ class TodoItem extends Component {
         this.resetTasks = () => {
             let id = this.props.id;
 
-            const url = 'http://5e0f48f09576aa0014666536.mockapi.io/todos/';
+            const url = '//5e0f48f09576aa0014666536.mockapi.io/todos/';
 
             const resetState = {
                 done: false,
