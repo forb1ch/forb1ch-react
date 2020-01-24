@@ -1,27 +1,31 @@
 {
   "files": {
     "main.css": "/forb1ch-react/static/css/main.073684e2.chunk.css",
-    "main.js": "/forb1ch-react/static/js/main.96e93ccb.chunk.js",
-    "main.js.map": "/forb1ch-react/static/js/main.96e93ccb.chunk.js.map",
+    "main.js": "/forb1ch-react/static/js/main.5376021b.chunk.js",
+    "main.js.map": "/forb1ch-react/static/js/main.5376021b.chunk.js.map",
     "runtime-main.js": "/forb1ch-react/static/js/runtime-main.dab1993e.js",
     "runtime-main.js.map": "/forb1ch-react/static/js/runtime-main.dab1993e.js.map",
-    "static/js/2.fecf9294.chunk.js": "/forb1ch-react/static/js/2.fecf9294.chunk.js",
-    "static/js/2.fecf9294.chunk.js.map": "/forb1ch-react/static/js/2.fecf9294.chunk.js.map",
+    "static/js/2.683fd12a.chunk.js": "/forb1ch-react/static/js/2.683fd12a.chunk.js",
+    "static/js/2.683fd12a.chunk.js.map": "/forb1ch-react/static/js/2.683fd12a.chunk.js.map",
     "index.html": "/forb1ch-react/index.html",
-    "precache-manifest.2c5bf95bdd6f511c99895df861e48530.js": "/forb1ch-react/precache-manifest.2c5bf95bdd6f511c99895df861e48530.js",
+    "precache-manifest.fcc4f4018efc726958f04341d49d4eff.js": "/forb1ch-react/precache-manifest.fcc4f4018efc726958f04341d49d4eff.js",
     "service-worker.js": "/forb1ch-react/service-worker.js",
     "static/css/main.073684e2.chunk.css.map": "/forb1ch-react/static/css/main.073684e2.chunk.css.map",
-    "static/js/2.fecf9294.chunk.js.LICENSE": "/forb1ch-react/static/js/2.fecf9294.chunk.js.LICENSE",
+    "static/js/2.683fd12a.chunk.js.LICENSE": "/forb1ch-react/static/js/2.683fd12a.chunk.js.LICENSE",
     "static/media/footer.scss": "/forb1ch-react/static/media/twitter.f50c6910.svg",
     "static/media/App.scss": "/forb1ch-react/static/media/Montserrat-SemiBold.92e95e61.woff",
+    "static/media/Projektmagazin.png": "/forb1ch-react/static/media/Projektmagazin.d956369d.png",
+    "static/media/WehaveAnyspace.png": "/forb1ch-react/static/media/WehaveAnyspace.dbe785a4.png",
     "static/media/about-us.scss": "/forb1ch-react/static/media/chair.c6f4ed12.svg",
     "static/media/banner.scss": "/forb1ch-react/static/media/bgtable.4dbea78b.png",
-    "static/media/any-logo.svg": "/forb1ch-react/static/media/any-logo.b0e3cb63.svg"
+    "static/media/any-logo.svg": "/forb1ch-react/static/media/any-logo.b0e3cb63.svg",
+    "static/media/nikon.png": "/forb1ch-react/static/media/nikon.494fad8c.png",
+    "static/media/uaz.png": "/forb1ch-react/static/media/uaz.87911e4c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dab1993e.js",
-    "static/js/2.fecf9294.chunk.js",
+    "static/js/2.683fd12a.chunk.js",
     "static/css/main.073684e2.chunk.css",
-    "static/js/main.96e93ccb.chunk.js"
+    "static/js/main.5376021b.chunk.js"
   ]
 }

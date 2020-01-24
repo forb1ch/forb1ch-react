@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b4bbf44a51b5aa3b223a593cc833808",
+    "revision": "67510c8cfbbd6a9873912872cd2b563a",
     "url": "/forb1ch-react/index.html"
   },
   {
-    "revision": "bd1c342b3af413f718fa",
+    "revision": "66c7d9178b4f7e85ff14",
     "url": "/forb1ch-react/static/css/main.073684e2.chunk.css"
   },
   {
-    "revision": "b857fd8e6177aad4a71f",
-    "url": "/forb1ch-react/static/js/2.fecf9294.chunk.js"
+    "revision": "ba0ba847347b1f8bd017",
+    "url": "/forb1ch-react/static/js/2.683fd12a.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/forb1ch-react/static/js/2.fecf9294.chunk.js.LICENSE"
+    "url": "/forb1ch-react/static/js/2.683fd12a.chunk.js.LICENSE"
   },
   {
-    "revision": "bd1c342b3af413f718fa",
-    "url": "/forb1ch-react/static/js/main.96e93ccb.chunk.js"
+    "revision": "66c7d9178b4f7e85ff14",
+    "url": "/forb1ch-react/static/js/main.5376021b.chunk.js"
   },
   {
     "revision": "179c2643ede38a9d420e",
@@ -108,6 +108,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/forb1ch-react/static/media/Montserrat-SemiBold.92e95e61.woff"
   },
   {
+    "revision": "d956369df630b3f495d3e7b1823d4b71",
+    "url": "/forb1ch-react/static/media/Projektmagazin.d956369d.png"
+  },
+  {
+    "revision": "dbe785a41177286988bce666895f011e",
+    "url": "/forb1ch-react/static/media/WehaveAnyspace.dbe785a4.png"
+  },
+  {
     "revision": "cacadba6d5c8ef17258fbad2ef61b7ec",
     "url": "/forb1ch-react/static/media/aim.cacadba6.svg"
   },
@@ -148,7 +156,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/forb1ch-react/static/media/linkedin.8690b821.svg"
   },
   {
+    "revision": "494fad8c12037c8b70a0646833bcd6e1",
+    "url": "/forb1ch-react/static/media/nikon.494fad8c.png"
+  },
+  {
     "revision": "f50c6910dd57660d41655973f376217c",
     "url": "/forb1ch-react/static/media/twitter.f50c6910.svg"
+  },
+  {
+    "revision": "87911e4c2f24745f2a367443d0933f2d",
+    "url": "/forb1ch-react/static/media/uaz.87911e4c.png"
   }
 ]);
